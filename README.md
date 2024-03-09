@@ -26,7 +26,7 @@ When first developping this app I followed [Shaked Askayo tutorial](https://www.
 2. **Optional**, if you want to setup a contained dependency environment run `.\venv\Scripts\activate`.
 3. Run `pip install -r requirements.txt` to install all the dependencies.
 4. Run *python app.py* nd your application shoud be set-up.
-5. **Optinal**, to make your script run on boot, execute *python autorun.py*.
+5. **Optinal**, to make your script run on boot, execute *python autorun.py* as admin.
 
 ## Usage
 
