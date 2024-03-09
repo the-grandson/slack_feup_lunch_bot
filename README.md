@@ -4,6 +4,8 @@ A very simple Slack app to respond with FEUP lunch menu.
 ## Instalation
 When first developping this app I followed [Shaked Askayo tutorial](https://www.kubiya.ai/resource-post/how-to-build-a-slackbot-with-python).
 
+![Slack App Menu](https://github.com/the-grandson/slack_feup_lunch_bot/blob/main/.venv/imgs/AppMenu.png)
+
 ### Slack App create and configure
 1. Create a [Slack App](https://api.slack.com/apps).
 2. Fill the App **Display Information**.
@@ -26,6 +28,9 @@ When first developping this app I followed [Shaked Askayo tutorial](https://www.
 5. **Optinal**, to make your script run on boot, execute *python autorun.py*.
 
 ## Usage
+
+![Lunch App Usage](https://github.com/the-grandson/slack_feup_lunch_bot/blob/main/.venv/imgs/Usage.png)
+
 1. Add your bot to a channel in your workspace.
 2. Mention your bot using `@botname` and it will answer with the current day lunch menus.
 3. **Optional**, set a daily reminder to mention your bot daily using `/remind @botname to What is the lunch menu today? at 10:00 every weekday`
