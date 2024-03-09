@@ -1,5 +1,6 @@
-![App logo](https://github.com/the-grandson/slack_feup_lunch_bot/blob/main/.venv/imgs/lunch-ico.png) # Slack - Almoços FEUP App
+# Slack - Almoços FEUP App
 A very simple Slack app to respond with FEUP lunch menu.
+![App logo](https://github.com/the-grandson/slack_feup_lunch_bot/blob/main/.venv/imgs/lunch-ico.png  =250x250) 
 
 ## Instalation
 When first developping this app I followed [Shaked Askayo tutorial](https://www.kubiya.ai/resource-post/how-to-build-a-slackbot-with-python).
