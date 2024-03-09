@@ -1,4 +1,4 @@
-# Slack - Almoços FEUP App
+![App logo](https://github.com/the-grandson/slack_feup_lunch_bot/blob/main/.venv/imgs/lunch-ico.png) # Slack - Almoços FEUP App
 A very simple Slack app to respond with FEUP lunch menu.
 
 ## Instalation
