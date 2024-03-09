@@ -34,3 +34,8 @@ When first developping this app I followed [Shaked Askayo tutorial](https://www.
 1. Add your bot to a channel in your workspace.
 2. Mention your bot using `@botname` and it will answer with the current day lunch menus.
 3. **Optional**, set a daily reminder to mention your bot daily using `/remind @botname to What is the lunch menu today? at 10:00 every weekday`
+
+## Future proof
+
+This app is using the FEUP lunch webpage [https://sigarra.up.pt/feup/en/cantina.ementashow](https://sigarra.up.pt/feup/en/cantina.ementashow), as per 09/03/2024, which might change its layout in the future.
+If the layout changes the **fetch_lunch.py** script has to be modified.
