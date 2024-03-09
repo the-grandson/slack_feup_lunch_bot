@@ -18,4 +18,14 @@ When first developping this app I followed [Shaked Askayo tutorial](https://www.
    - When installing the app you will be asked to select the Slack workspace.
 8. Go to *Basic Information* and under **App-Level Tokens** click your **connections:write** token name to copy your **Slack App Token** to the **.env** file.
 
-### Python script install
+### Python script install (windows)
+1. Considering you have *Python 3.10* and *pip* installed, open a command line and navigate to the *.venv* folder.
+2. **Optional**, if you want to setup a contained dependency environment run `.\venv\Scripts\activate`.
+3. Run `pip install -r requirements.txt` to install all the dependencies.
+4. Run *python app.py* nd your application shoud be set-up.
+5. **Optinal**, to make your script run on boot, execute *python autorun.py*.
+
+## Usage
+1. Add your bot to a channel in your workspace.
+2. Mention your bot using `@botname` and it will answer with the current day lunch menus.
+3. **Optional**, set a daily reminder to mention your bot daily using `/remind @botname to What is the lunch menu today? at 10:00 every weekday`
