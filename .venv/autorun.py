@@ -3,7 +3,18 @@
 # Script copied from: https://www.geeksforgeeks.org/autorun-a-python-script-on-windows-startup/
 
 import winreg as reg 
-import os             
+import getpass
+import os
+import sys
+
+USER_NAME = getpass.getuser()
+
+def AddToStartup(file_path=""):
+    if file_path == "":
+        file_path = os.path.dirname(os.path.realpath(__file__))
+    bat_path = "C:\\Users\\%s\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup" % (USER_NAME)
+    with open(bat_path + '\\' + "launch_lunch_bot.bat", "w+") as bat_file:
+        bat_file.write("echo off\n%s %s\\app.py" % (sys.executable,file_path))
  
 def AddToRegistry():
  
@@ -36,4 +47,5 @@ def AddToRegistry():
  
 # Driver Code
 if __name__=="__main__":
+    AddToStartup()
     AddToRegistry()
