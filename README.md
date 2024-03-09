@@ -1,8 +1,11 @@
 # Slack - Almoços FEUP App
+<img src="https://github.com/the-grandson/slack_feup_lunch_bot/blob/main/.venv/imgs/lunch-ico.png" alt="App Logo" width="150" height="150"> 
 A very simple Slack app to respond with FEUP lunch menu.
 
 ## Instalation
 When first developping this app I followed [Shaked Askayo tutorial](https://www.kubiya.ai/resource-post/how-to-build-a-slackbot-with-python).
+
+![Slack App Menu](https://github.com/the-grandson/slack_feup_lunch_bot/blob/main/.venv/imgs/AppMenu.png)
 
 ### Slack App create and configure
 1. Create a [Slack App](https://api.slack.com/apps).
@@ -23,9 +26,17 @@ When first developping this app I followed [Shaked Askayo tutorial](https://www.
 2. **Optional**, if you want to setup a contained dependency environment run `.\venv\Scripts\activate`.
 3. Run `pip install -r requirements.txt` to install all the dependencies.
 4. Run *python app.py* nd your application shoud be set-up.
-5. **Optinal**, to make your script run on boot, execute *python autorun.py*.
+5. **Optinal**, to make your script run on boot, execute *python autorun.py* as admin.
 
 ## Usage
+
+![Lunch App Usage](https://github.com/the-grandson/slack_feup_lunch_bot/blob/main/.venv/imgs/Usage.png)
+
 1. Add your bot to a channel in your workspace.
 2. Mention your bot using `@botname` and it will answer with the current day lunch menus.
 3. **Optional**, set a daily reminder to mention your bot daily using `/remind @botname to What is the lunch menu today? at 10:00 every weekday`
+
+## Future proof
+
+This app is using the FEUP lunch webpage [https://sigarra.up.pt/feup/en/cantina.ementashow](https://sigarra.up.pt/feup/en/cantina.ementashow), as per 09/03/2024, which might change its layout in the future.
+If the layout changes the **fetch_lunch.py** script has to be modified.
